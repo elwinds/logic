@@ -1,0 +1,36 @@
+﻿@import './variables.scss';
+
+@font-face {
+    font-family: "Nunito";
+    src: local("Nunito"),
+        url("../fonts/Nunito-ExtraBold.ttf") format("truetype");
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+* {
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 18px;
+    line-height: 18px;
+    background-color: $whiteColor;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+

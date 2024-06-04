@@ -1,0 +1,9 @@
+﻿@import '../../styles/mixins.scss';
+
+.container {
+    @include pxToRem('gap', 16);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: min-content;
+}

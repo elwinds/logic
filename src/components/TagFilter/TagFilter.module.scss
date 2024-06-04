@@ -1,0 +1,28 @@
+﻿@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.container {
+    @include pxToRem('width', 332);
+    @include column;
+    @include pxToRem('padding', 9);
+    @include pxToRem('border-radius', 18);
+    border: 1px solid $greyColor;
+    height: fit-content;
+}
+
+.button {
+    @include pxToRem('padding', 12);
+    color: $darkGreyColor;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 18px;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+
+    &.selected {
+        @include pxToRem('border-radius', 12);
+        background-color: $greenColor;
+        color: $whiteColor;
+    }
+}

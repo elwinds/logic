@@ -1,0 +1,31 @@
+﻿@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.container {
+    @include column;
+    @include pxToRem('border-radius', 18);
+    @include shadowBlock;
+    overflow: hidden;
+    background-color: $whiteColor;
+}
+
+.wrapper {
+    @include pxToRem('height', 145);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    @include pxToRem('height', 144);
+    @include pxToRem('width', 144);
+}
+
+.title {
+    @include pxToRem('padding', 18);
+    @include pxToRem('padding-top', 10);
+    color: $darkGreyColor;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 18px;
+}
